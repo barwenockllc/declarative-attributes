@@ -1,0 +1,22 @@
+<?php
+/**
+ * @author Barwenock
+ * @copyright Copyright (c) Barwenock
+ * @package Declarative Attributes Import for Magento 2
+ */
+
+/**
+ * @var $block \Barwenock\DeclarativeAttributes\Block\Adminhtml\Index
+ * @var $escaper \Magento\Framework\Escaper
+ */
+?>
+<div class="declarative-attributes">
+    <form id="declarative-attributes-form" class="admin__fieldset"
+          action="<?= $escaper->escapeUrl($block->getFormAction()); ?>"
+          method="post" enctype="multipart/form-data">
+        <input name="form_key" type="hidden" value="<?= $escaper->escapeHtmlAttr($block->getFormKey());?>">
+        <label for="file_upload">Choose a file:</label>
+        <input type="file" name="file_upload" id="file_upload" />
+        <button type="submit" name="submit" value="submit">Upload File & Import Attributes</button>
+    </form>
+</div>

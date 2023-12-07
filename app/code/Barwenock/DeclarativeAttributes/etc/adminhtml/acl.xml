@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Barwenock
+ * @copyright Copyright (c) Barwenock
+ * @package Declarative Attributes Import for Magento 2
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Acl/etc/acl.xsd">
+    <acl>
+        <resources>
+            <resource id="Magento_Backend::admin">
+                <resource id="Barwenock_DeclarativeAttributes::declarative_attributes_import"
+                          title="Import Declarative Attributes" sortOrder="10"/>
+            </resource>
+        </resources>
+    </acl>
+</config>

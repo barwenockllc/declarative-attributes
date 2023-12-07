@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Barwenock
+ * @copyright Copyright (c) Barwenock
+ * @package Declarative Attributes Import for Magento 2
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="admin">
+        <route id="declarative_attributes" frontName="declarative_attributes">
+            <module name="Barwenock_DeclarativeAttributes" before="Magento_Backend"/>
+        </route>
+    </router>
+</config>
